@@ -49,19 +49,23 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600"
               >
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
+              Log in
+              {/* <span aria-hidden="true">&rarr;</span> */}
             </a>
+            <button className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-500 hover:text-white hover:bg-blue-500">
+              Sign up
+            </button>
           </div>
         </nav>
         <Dialog

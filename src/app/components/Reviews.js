@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function Reviews() {
   return (
-    <div className="relative isolate pt-14">
+    <div className="relative isolate">
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -40,10 +40,10 @@ export default function Reviews() {
           }}
         />
       </div>
-      <div className="py-16 sm:py-16">
+      <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-skyblue">
+            <h2 className="text-lg font-semibold leading-8 tracking-tight text-blue-500">
               Reviews
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -57,7 +57,7 @@ export default function Reviews() {
                   key={testimonial.author.handle}
                   className="pt-8 sm:inline-block sm:w-full sm:px-4"
                 >
-                  <figure className="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+                  <figure className="rounded-2xl bg-white ring-1 ring-blue-500 shadow-xl p-8 text-sm leading-6">
                     <blockquote className="text-gray-900">
                       <p>{`“${testimonial.body}”`}</p>
                     </blockquote>
