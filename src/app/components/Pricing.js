@@ -132,8 +132,8 @@ export default function Pricing() {
               key={tier.id}
               className={classNames(
                 tier.mostPopular
-                  ? "ring-2 ring-blue-500"
-                  : "ring-1 ring-gray-200",
+                  ? "ring-2 ring-blue-500 bg-white shadow-md"
+                  : "ring-1 ring-gray-200 bg-white shadow-md",
                 "rounded-3xl p-8"
               )}
             >
