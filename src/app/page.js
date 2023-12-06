@@ -7,17 +7,21 @@ import Stats from "./components/Stats";
 import CTA from "./components/CTA";
 import Reviews from "./components/Reviews";
 import Demo from "./components/Demo";
+import Navbar from "./components/Navbar";
 
 export default function Page() {
   return (
     <>
+      {/* <div className="bg-gradient-to-b from-blue-400 to-bg-white"> */}
       <Hero />
+      <Navbar />
       <Demo />
-      <Stats />
+      {/* <Stats /> */}
       <Reviews />
       <Pricing />
-      <CTA />
+      {/* <CTA /> */}
       <Footer />
+      {/* </div> */}
     </>
   );
 }

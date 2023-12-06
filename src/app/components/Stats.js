@@ -11,7 +11,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="border-b">
+    <div className="bg-gradient-to-b from-blue-200 to-blue-100">
       <div className="max-w-7xl mx-auto py-28">
         <h3 className="text-3xl font-semibold leading-6 text-gray-900">
           People using Fileinbox have received a lot of files
