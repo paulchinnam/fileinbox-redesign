@@ -6,21 +6,21 @@ import {
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Custom file drop url.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "You'll get a custom filedrop page where your clients can upload their files.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Sync or download your files.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+      "You can sync your files to a folder on your computer or Google Drive. You can also just download directly from the file upload page.",
     icon: LockClosedIcon,
   },
   {
-    name: "Database backups.",
+    name: "Protected file visibility.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      "Users can't see files uploaded by other users. They won't even be able to see files they've uploaded themself.",
     icon: ServerIcon,
   },
 ];
@@ -52,9 +52,9 @@ export default function Demo() {
                   Watch this demo
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  Fileinbox aims to resolve many of the problems associated with
+                  sending and receiving files. Check out this demo to learn
+                  about all its great features and use cases.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
                   {features.map((feature) => (

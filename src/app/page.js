@@ -16,7 +16,7 @@ export default function Page() {
       <Hero />
       <Navbar />
       <Demo />
-      {/* <Stats /> */}
+      <Stats />
       <Reviews />
       <Pricing />
       {/* <CTA /> */}
