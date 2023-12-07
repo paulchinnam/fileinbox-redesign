@@ -12,16 +12,14 @@ import Navbar from "./components/Navbar";
 export default function Page() {
   return (
     <>
-      {/* <div className="bg-gradient-to-b from-blue-400 to-bg-white"> */}
       <Hero />
       <Navbar />
       <Demo />
       <Stats />
       <Reviews />
       <Pricing />
-      {/* <CTA /> */}
+      <CTA />
       <Footer />
-      {/* </div> */}
     </>
   );
 }
