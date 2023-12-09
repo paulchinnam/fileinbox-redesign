@@ -170,7 +170,7 @@ export default function Page() {
               </div>
             </div>
 
-            <p className="mt-10 text-center text-sm text-gray-500">
+            {/* <p className="mt-10 text-center text-sm text-gray-500">
               Not a member?{" "}
               <a
                 href="#"
@@ -178,7 +178,7 @@ export default function Page() {
               >
                 Start a 14 day free trial
               </a>
-            </p>
+            </p> */}
           </div>
           <div
             className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl"
