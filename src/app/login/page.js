@@ -1,4 +1,12 @@
-export default function Example() {
+"use client";
+
+import Image from "next/image";
+import Google from "public/google.svg";
+import { useRouter } from "next/navigation";
+
+export default function Page() {
+  const router = useRouter();
+
   return (
     <>
       <div className="relative isolate">
@@ -17,8 +25,9 @@ export default function Example() {
           </div>
           <div className="sm:mx-auto sm:w-full sm:max-w-md">
             <img
-              className="mx-auto h-10 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              onClick={() => router.push("/")}
+              className="mx-auto h-10 w-auto hover:cursor-pointer"
+              src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -27,7 +36,7 @@ export default function Example() {
           </div>
 
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-            <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+            <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12 ring-1 ring-blue-500">
               <form className="space-y-6" action="#" method="POST">
                 <div>
                   <label
@@ -43,7 +52,7 @@ export default function Example() {
                       type="email"
                       autoComplete="email"
                       required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -62,18 +71,18 @@ export default function Example() {
                       type="password"
                       autoComplete="current-password"
                       required
-                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
+                <div className="flex items-center justify-end">
+                  {/* <div className="flex items-center">
                     <input
                       id="remember-me"
                       name="remember-me"
                       type="checkbox"
-                      className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                      className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
                     />
                     <label
                       htmlFor="remember-me"
@@ -81,12 +90,12 @@ export default function Example() {
                     >
                       Remember me
                     </label>
-                  </div>
+                  </div> */}
 
                   <div className="text-sm leading-6">
                     <a
                       href="#"
-                      className="font-semibold text-indigo-600 hover:text-indigo-500"
+                      className="font-semibold text-blue-600 hover:text-blue-500"
                     >
                       Forgot password?
                     </a>
@@ -96,7 +105,7 @@ export default function Example() {
                 <div>
                   <button
                     type="submit"
-                    className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                   >
                     Sign in
                   </button>
@@ -118,25 +127,26 @@ export default function Example() {
                   </div>
                 </div>
 
-                <div className="mt-6 grid grid-cols-2 gap-4">
+                <div className="mt-6">
                   <a
                     href="#"
-                    className="flex w-full items-center justify-center gap-3 rounded-md bg-[#1D9BF0] px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D9BF0]"
+                    className="flex w-full items-center justify-center gap-3 rounded-md shadow-md ring-1 ring-gray-200 bg-white px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1D9BF0]"
                   >
-                    <svg
+                    <Image src={Google} className="h-5 w-5" />
+                    {/* <svg
                       className="h-5 w-5"
                       aria-hidden="true"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
                       <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                    <span className="text-sm font-semibold leading-6">
-                      Twitter
+                    </svg> */}
+                    <span className="text-sm font-semibold leading-6 text-gray-900">
+                      Google
                     </span>
                   </a>
 
-                  <a
+                  {/* <a
                     href="#"
                     className="flex w-full items-center justify-center gap-3 rounded-md bg-[#24292F] px-3 py-1.5 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#24292F]"
                   >
@@ -155,7 +165,7 @@ export default function Example() {
                     <span className="text-sm font-semibold leading-6">
                       GitHub
                     </span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -164,14 +174,14 @@ export default function Example() {
               Not a member?{" "}
               <a
                 href="#"
-                className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+                className="font-semibold leading-6 text-blue-600 hover:text-blue-500"
               >
                 Start a 14 day free trial
               </a>
             </p>
           </div>
           <div
-            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl"
             aria-hidden="true"
           >
             <div
