@@ -6,6 +6,7 @@ import Image from "next/image";
 import macbook from "public/macbook.png";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import macbook2 from "public/macbook2.png";
 
 const navigation = [
   { name: "Demo", href: "#" },
@@ -179,7 +180,7 @@ export default function Example() {
                 />
               </div> */}
               <Image
-                src={macbook}
+                src={macbook2}
                 alt="App screenshot"
                 width={2432}
                 height={1442}

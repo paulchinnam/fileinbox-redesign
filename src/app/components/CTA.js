@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ctaImage from "public/ctaimage.png";
+import cta2 from "public/cta2.png";
 
 export default function CTA() {
   return (
@@ -18,8 +19,8 @@ export default function CTA() {
         />
       </div>
       <div className="mx-auto max-w-7xl py-16 sm:px-6 sm:py-16 lg:px-8">
-        <div className="relative isolate overflow-hidden ring-1 ring-blue-500 bg-white px-6 pt-16 shadow-md sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
-          <svg
+        <div className="relative isolate overflow-hidden bg-blue-950 px-6 pt-16 shadow-md sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          {/* <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
             aria-hidden="true"
@@ -37,15 +38,15 @@ export default function CTA() {
                 <stop offset={1} stopColor="white" />
               </radialGradient>
             </defs>
-          </svg>
+          </svg> */}
 
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Create an upload page
               <br />
               {/* Start using our app today. */}
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg leading-8 text-white">
               20 file free trial, no credit card required, and a money-back
               guarantee if youre not totally happy.
             </p>
@@ -74,7 +75,7 @@ export default function CTA() {
             /> */}
             <Image
               className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src={ctaImage}
+              src={cta2}
               alt="App screenshot"
               width={1824}
               height={1080}
