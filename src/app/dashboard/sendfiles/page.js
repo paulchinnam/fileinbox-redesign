@@ -1,64 +1,71 @@
-import { FolderPlusIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import {
+  PhotoIcon,
+  CommandLineIcon,
+  FolderPlusIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 
 const people = [
   {
-    name: "Leslie Alexander",
-    email: "leslie.alexander@example.com",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Screenshot 2023-12-0....07 PM.png",
+    email: "Uploaded 868.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "PhotoIcon",
     href: "#",
     lastSeen: "3h ago",
     lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 1,
   },
   {
-    name: "Michael Foster",
-    email: "michael.foster@example.com",
-    role: "Co-Founder / CTO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Untitled-1.js",
+    email: "uploaded 8.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "CommandLineIcon",
     href: "#",
     lastSeen: "3h ago",
     lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 2,
   },
   {
-    name: "Dries Vincent",
-    email: "dries.vincent@example.com",
-    role: "Business Relations",
-    imageUrl:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    href: "#",
-    lastSeen: null,
-  },
-  {
-    name: "Lindsay Walton",
-    email: "lindsay.walton@example.com",
-    role: "Front-end Developer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Screenshot 2023-12-0....07 PM.png",
+    email: "Uploaded 868.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "PhotoIcon",
     href: "#",
     lastSeen: "3h ago",
     lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 1,
   },
   {
-    name: "Courtney Henry",
-    email: "courtney.henry@example.com",
-    role: "Designer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Untitled-1.js",
+    email: "uploaded 8.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "CommandLineIcon",
     href: "#",
     lastSeen: "3h ago",
     lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 1,
   },
   {
-    name: "Tom Cook",
-    email: "tom.cook@example.com",
-    role: "Director of Product",
-    imageUrl:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Screenshot 2023-12-0....07 PM.png",
+    email: "Uploaded 868.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "PhotoIcon",
     href: "#",
-    lastSeen: null,
+    lastSeen: "3h ago",
+    lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 2,
+  },
+  {
+    name: "Untitled-1.js",
+    email: "uploaded 8.2 kB",
+    role: "fi.run/_8qw3-nO",
+    imageUrl: "CommandLineIcon",
+    href: "#",
+    lastSeen: "3h ago",
+    lastSeenDateTime: "2023-01-23T13:23Z",
+    id: 2,
   },
 ];
 
@@ -66,10 +73,7 @@ export default function Page() {
   return (
     <>
       <main className="bg-white shadow-md ring-1 ring-blue-500 p-10 rounded-md">
-        <button
-          type="button"
-          className="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        >
+        <div className="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-blue-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
           {/* <svg
             className="mx-auto h-12 w-12 text-gray-400"
             stroke="currentColor"
@@ -90,13 +94,14 @@ export default function Page() {
           </span>
           <button
             type="button"
-            className="text-sm mt-6 px-4 py-1.5 rounded-md bg-blue-400 text-white hover:bg-blue-600"
+            className="text-sm mt-4 px-4 py-1.5 rounded-md bg-blue-400 text-white hover:bg-blue-600"
           >
             Click to upload
           </button>
-        </button>
+        </div>
+        <p className="text-sm pt-2 flex justify-end text-gray-500">10GB/file</p>
 
-        <h1 className="pt-12 font-semibold">Uploaded files</h1>
+        <h1 className="pt-12 font-semibold">Uploaded 6 files</h1>
         {/* <div className="flex flex-col mt-12">
           <div className="mx-auto">
             <FolderPlusIcon className="h-12 w-12 stroke-1 text-gray-400" />
@@ -110,7 +115,11 @@ export default function Page() {
           {people.map((person) => (
             <li
               key={person.email}
-              className="relative flex justify-between gap-x-6 px-4 py-5 hover:bg-gray-50 sm:px-6 bg-gray-50 shadow-sm rounded-xl"
+              className={`relative flex justify-between gap-x-6 px-4 py-5 sm:px-6 ${
+                person.id === 1
+                  ? "bg-green-400/10 border border-green-600 hover:bg-green-400/30"
+                  : "bg-yellow-400/10 border border-yellow-600 hover:bg-yellow-400/30"
+              } shadow-sm rounded-xl`}
             >
               <div className="flex min-w-0 gap-x-4">
                 {/* <img
@@ -118,6 +127,11 @@ export default function Page() {
                   src={person.imageUrl}
                   alt=""
                 /> */}
+                {person.id === 1 ? (
+                  <PhotoIcon className="h-6 w-6" />
+                ) : (
+                  <CommandLineIcon className="h-6 w-6" />
+                )}
                 <div className="min-w-0 flex-auto">
                   <p className="text-sm font-semibold leading-6 text-gray-900">
                     <a href={person.href}>
@@ -135,17 +149,17 @@ export default function Page() {
                   </p>
                 </div>
               </div>
-              <div className="flex shrink-0 items-center gap-x-4">
+              <div className="flex shrink-0 items-center gap-x-8">
                 <div className="hidden sm:flex sm:flex-col sm:items-end">
                   <p className="text-sm leading-6 text-gray-900">
                     {person.role}
                   </p>
                   {person.lastSeen ? (
                     <p className="mt-1 text-xs leading-5 text-gray-500">
-                      Last seen{" "}
-                      <time dateTime={person.lastSeenDateTime}>
+                      Copy link
+                      {/* <time dateTime={person.lastSeenDateTime}>
                         {person.lastSeen}
-                      </time>
+                      </time> */}
                     </p>
                   ) : (
                     <div className="mt-1 flex items-center gap-x-1.5">
@@ -156,7 +170,7 @@ export default function Page() {
                     </div>
                   )}
                 </div>
-                <ChevronRightIcon
+                <XMarkIcon
                   className="h-5 w-5 flex-none text-gray-400"
                   aria-hidden="true"
                 />

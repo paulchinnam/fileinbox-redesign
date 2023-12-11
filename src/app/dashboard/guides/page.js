@@ -1,3 +1,5 @@
+import GuidesHeader from "@/app/components/GuidesHeader";
+
 const posts = [
   {
     id: 1,
@@ -169,7 +171,8 @@ const posts = [
 
 export default function Page() {
   return (
-    <div className="bg-white">
+    <div className="mb-10">
+      <GuidesHeader />
       <div className="mx-auto max-w-7xl ">
         {/* <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -179,7 +182,7 @@ export default function Page() {
             Learn how to grow your business with our expert advice.
           </p>
         </div> */}
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
           {posts.map((post) => (
             <article
               key={post.id}

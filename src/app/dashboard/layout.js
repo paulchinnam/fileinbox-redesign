@@ -233,7 +233,7 @@ export default function DashboardLayout({ children }) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow-md">
+        <header className="bg-white">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <h1 className="text-lg font-semibold leading-6 text-gray-900">
               {pathName === "/dashboard/receivefiles"
@@ -241,14 +241,14 @@ export default function DashboardLayout({ children }) {
                 : pathName === "/dashboard/sendfiles"
                 ? "Send Files"
                 : pathName === "/dashboard/guides"
-                ? "Guides"
+                ? "Fileinbox Articles & Guides"
                 : pathName === "/dashboard/account"
                 ? "Account"
                 : ""}
             </h1>
           </div>
         </header>
-        <main>
+        <main className="bg-gray-50 shadow-inner">
           <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             {children}
           </div>
