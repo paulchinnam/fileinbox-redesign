@@ -5,6 +5,12 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import {
+  UsersIcon,
+  PuzzlePieceIcon,
+  CreditCardIcon,
+  ArrowRightOnRectangleIcon,
+} from "@heroicons/react/24/outline";
 
 export default function DashboardLayout({ children }) {
   const pathName = usePathname();
@@ -17,20 +23,36 @@ export default function DashboardLayout({ children }) {
   };
 
   const navigation = [
+    // {
+    //   name: "Pages",
+    //   href: "/dashboard/pages",
+    //   current: pathName === "/dashboard/pages",
+    // },
     {
-      name: "Pages",
-      href: "/dashboard/pages",
-      current: pathName === "/dashboard/pages",
+      name: "Receive Files",
+      href: "/dashboard/receivefiles",
+      current: pathName === "/dashboard/receivefiles",
     },
     {
-      name: "Articles",
-      href: "/dashboard/articles",
-      current: pathName === "/dashboard/articles",
+      name: "Send Files",
+      href: "/dashboard/sendfiles",
+      current: pathName === "/dashboard/sendfiles",
+    },
+    {
+      name: "Guides",
+      href: "/dashboard/guides",
+      current: pathName === "/dashboard/guides",
     },
   ];
   const userNavigation = [
-    { name: "Your Profile", href: "#" },
-    { name: "Sign out", href: "#" },
+    { name: "Your Profile", href: "/dashboard/account", icon: "UsersIcon" },
+    {
+      name: "Connected Apps",
+      href: "/dashboard/connectedapps",
+      icon: "PuzzlePieceIcon",
+    },
+    { name: "Billing", href: "/dashboard/billing", icon: "CreditCardIcon" },
+    { name: "Sign out", href: "#", icon: "ArrowRightOnRectangleIcon" },
   ];
 
   function classNames(...classes) {
@@ -40,7 +62,7 @@ export default function DashboardLayout({ children }) {
   return (
     <>
       <div className="h-screen">
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-blue-400">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -49,7 +71,7 @@ export default function DashboardLayout({ children }) {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        src="https://tailwindui.com/img/logos/mark.svg?color=white"
                         alt="Your Company"
                       />
                     </div>
@@ -61,8 +83,8 @@ export default function DashboardLayout({ children }) {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-gray-900 text-white"
-                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                                ? "bg-blue-600 text-white"
+                                : "text-white hover:bg-blue-600 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
                             aria-current={item.current ? "page" : undefined}
@@ -91,7 +113,7 @@ export default function DashboardLayout({ children }) {
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
                             <img
-                              className="h-8 w-8 rounded-full"
+                              className="h-8 w-8 rounded-full ring-2 ring-white"
                               src={user.imageUrl}
                               alt=""
                             />
@@ -211,13 +233,15 @@ export default function DashboardLayout({ children }) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow-sm">
+        <header className="bg-white shadow-md">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <h1 className="text-lg font-semibold leading-6 text-gray-900">
-              {pathName === "/dashboard/pages"
-                ? "Pages"
-                : pathName === "/dashboard/articles"
-                ? "Articles"
+              {pathName === "/dashboard/receivefiles"
+                ? "Receive Files"
+                : pathName === "/dashboard/sendfiles"
+                ? "Send Files"
+                : pathName === "/dashboard/guides"
+                ? "Guides"
                 : pathName === "/dashboard/account"
                 ? "Account"
                 : ""}

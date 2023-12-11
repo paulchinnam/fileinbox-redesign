@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import macbook from "public/macbook.png";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const navigation = [
   { name: "Demo", href: "#" },
@@ -15,6 +16,8 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const router = useRouter();
 
   return (
     <div className="bg-white">
@@ -63,7 +66,11 @@ export default function Example() {
               Log in
               {/* <span aria-hidden="true">&rarr;</span> */}
             </Link>
-            <button className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-500 hover:text-white hover:bg-blue-500">
+            <button
+              type="button"
+              onClick={() => router.push("/register")}
+              className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-500 hover:text-white hover:bg-blue-500"
+            >
               Sign up
             </button>
           </div>
