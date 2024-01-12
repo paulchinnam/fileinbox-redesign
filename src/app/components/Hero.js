@@ -70,7 +70,7 @@ export default function Example() {
             <button
               type="button"
               onClick={() => router.push("/login")}
-              className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-500 hover:text-white hover:bg-blue-500"
+              className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-400 hover:text-white hover:bg-blue-400"
             >
               Sign up
             </button>
@@ -157,7 +157,7 @@ export default function Example() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-blue-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                  className="rounded-md bg-blue-400 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                 >
                   Create an upload page
                 </a>
