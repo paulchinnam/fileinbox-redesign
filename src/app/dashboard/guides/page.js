@@ -172,7 +172,25 @@ const posts = [
 export default function Page() {
   return (
     <div className="mb-10">
-      <GuidesHeader />
+      {/* <GuidesHeader /> */}
+      <div className="py-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <p className="text-base font-semibold leading-7 text-blue-500">
+              Need help receiving large files? File inbox has you covered.
+            </p>
+            <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Check out these guides for help.
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              {`If you don't find what you're looking for here reach out to`}{" "}
+              <a className="text-blue-400 underline">@cgenco</a>
+              {` on twitter and
+              he'll write up a new guide for you.`}
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="mx-auto max-w-7xl ">
         {/* <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -192,15 +210,15 @@ export default function Page() {
                 <img
                   src={post.imageUrl}
                   alt=""
-                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                  className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[16/9]"
                 />
                 <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
               </div>
               <div className="max-w-xl">
                 <div className="mt-8 flex items-center gap-x-4 text-xs">
-                  <time dateTime={post.datetime} className="text-gray-500">
+                  {/* <time dateTime={post.datetime} className="text-gray-500">
                     {post.date}
-                  </time>
+                  </time> */}
                   {/* <a
                     href={post.category.href}
                     className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"

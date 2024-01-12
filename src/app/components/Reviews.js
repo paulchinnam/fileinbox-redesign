@@ -47,7 +47,7 @@ export default function Reviews() {
               Reviews
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Weve worked with lots of amazing people
+              {`We've worked with lots of amazing people`}
             </p>
           </div>
           <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
@@ -57,7 +57,7 @@ export default function Reviews() {
                   key={testimonial.author.handle}
                   className="pt-8 sm:inline-block sm:w-full sm:px-4"
                 >
-                  <figure className="rounded-2xl bg-white ring-1 ring-blue-500 shadow-xl p-8 text-sm leading-6">
+                  <figure className="rounded-2xl bg-white ring-1 ring-gray-200 shadow-xl p-8 text-sm leading-6">
                     <blockquote className="text-gray-900">
                       <p>{`“${testimonial.body}”`}</p>
                     </blockquote>

@@ -36,7 +36,7 @@ export default function Page() {
           </div>
 
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-            <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12 ring-1 ring-blue-500">
+            <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12 ring-1 ring-gray-200">
               <form className="space-y-6" action="#" method="POST">
                 <div>
                   <label

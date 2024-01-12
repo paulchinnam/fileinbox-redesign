@@ -46,7 +46,7 @@ export default function Demo() {
             <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-blue-500">
-                  Its actually pretty good
+                  {`It's actually pretty good`}
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Watch this demo

@@ -2,8 +2,15 @@ export default function GuidesHeader() {
   return (
     <div className="pb-10">
       <div className="mx-auto max-w-7xl">
-        <div className="relative isolate flex flex-col gap-10 overflow-hidden bg-blue-950 px-6 py-24 shadow-md sm:rounded-3xl sm:px-24 xl:flex-row xl:items-center xl:py-16">
-          <div className="xl:max-w-none xl:flex-auto">
+        <div className="relative isolate flex flex-col gap-10 overflow-hidden bg-blue-500 px-6 py-24 shadow-md sm:rounded-3xl sm:px-24 xl:flex-row xl:items-center xl:py-16">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Need help receiving large files?{" "}
+            <span className="font-medium">
+              Fileinbox has you covered. Check out these guides for help.
+            </span>
+          </h2>
+          {/* <p>Fileinbox has you covered. Check out these guides for help.</p> */}
+          {/* <div className="xl:max-w-none xl:flex-auto">
             <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl xl:max-w-none xl:flex-auto">
               Need help receiving <br /> large files?
             </h2>
@@ -12,13 +19,14 @@ export default function GuidesHeader() {
             </p>
           </div>
           <div className="max-w-md text-white">
-            {/* <p>Fileinbox has you covered. Check out these guides for help.</p> */}
+            <p>Fileinbox has you covered. Check out these guides for help.</p>
             <p className="">
-              If you dont find what youre looking for here reach out to{" "}
-              <a className="text-blue-400 underline">@cgenco</a> on twitter and
-              hell write up a new guide for you.
+              {`If you don't find what you're looking for here reach out to`}{" "}
+              <a className="text-blue-400 underline">@cgenco</a>
+              {` on twitter and
+              he'll write up a new guide for you.`}
             </p>
-          </div>
+          </div> */}
           {/* <form className="w-full max-w-md">
             <div className="flex gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -48,7 +56,7 @@ export default function GuidesHeader() {
               .
             </p>
           </form> */}
-          <svg
+          {/* <svg
             viewBox="0 0 1024 1024"
             className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
             aria-hidden="true"
@@ -73,7 +81,7 @@ export default function GuidesHeader() {
                 <stop offset={1} stopColor="#E935C1" stopOpacity={0} />
               </radialGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
       </div>
     </div>

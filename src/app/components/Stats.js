@@ -84,14 +84,14 @@
 // }
 
 const stats = [
-  { id: 1, name: "Photos", value: "4,785,076 (11.7 TB)" },
-  { id: 2, name: "PDFs", value: "429,934 (1.4 TB)" },
-  { id: 3, name: "Documents", value: "246,212 (108.3 GB)" },
-  { id: 3, name: "Excel Sheets", value: "100,211 (76.4 GB)" },
-  { id: 3, name: "Videos", value: "95,335 (7.6 TB)" },
-  { id: 3, name: "Audio Files", value: "73,009 (1.4 TB)" },
-  { id: 3, name: "Power Points", value: "44,748 (375.3 GB)" },
-  { id: 3, name: "Other Things", value: "655,447 (19.5 TB)" },
+  { id: 1, name: "4,785,076 total", value: "11.7 TB of Photos" },
+  { id: 2, name: "429,934 total", value: "1.4 TB of PDFs" },
+  { id: 3, name: "246,212 total", value: "108.3 GB of Documents" },
+  { id: 3, name: "100,211 total", value: "76.4 GB of Excel Sheets" },
+  { id: 3, name: "95,335 total", value: "7.6 TB of Videos" },
+  { id: 3, name: "73,009 total", value: "1.4 TB of Audio Files" },
+  { id: 3, name: "44,748 total", value: "375.3 GB of Power Points" },
+  { id: 3, name: "655,447 total", value: "19.5 TB of Other Things" },
 ];
 
 export default function Stats() {
@@ -107,11 +107,11 @@ export default function Stats() {
               To be precise...
             </p>
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 ring-1 shadow-md ring-blue-500 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-16 grid grid-cols-1 gap-0.5 ring-1 shadow-md ring-gray-200 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div
                 key={stat.id}
-                className="flex flex-col ring-1 ring-gray-400/50 bg-white p-8"
+                className="flex flex-col ring-1 ring-gray-200 bg-white p-8"
               >
                 <dt className="text-sm font-semibold leading-6 text-gray-600">
                   {stat.name}

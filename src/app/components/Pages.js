@@ -98,6 +98,7 @@ import {
   ChatBubbleBottomCenterTextIcon,
   Cog6ToothIcon,
   PlusCircleIcon,
+  ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
 
 const people = [
@@ -212,9 +213,12 @@ export default function Pages() {
                   {person.role}
                 </span> */}
               </div>
-              <a className="mt-1 truncate text-sm text-blue-500 underline">
-                {person.title}
-              </a>
+              <div className="flex gap-1 items-center">
+                <a className="mt-1 truncate text-sm text-blue-500 underline">
+                  {person.title}
+                </a>
+                <ClipboardDocumentIcon className="h-4 w-4 text-gray-400" />
+              </div>
             </div>
             {/* <img
               className="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300"

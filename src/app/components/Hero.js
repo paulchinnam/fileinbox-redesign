@@ -69,7 +69,7 @@ export default function Example() {
             </Link>
             <button
               type="button"
-              onClick={() => router.push("/register")}
+              onClick={() => router.push("/login")}
               className="px-4 py-1.5 rounded-md text-sm font-semibold leading-6 ring-1 text-blue-500 hover:text-white hover:bg-blue-500"
             >
               Sign up

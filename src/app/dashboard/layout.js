@@ -45,14 +45,22 @@ export default function DashboardLayout({ children }) {
     },
   ];
   const userNavigation = [
-    { name: "Your Profile", href: "/dashboard/account", icon: "UsersIcon" },
+    {
+      name: "Your Account",
+      href: "/dashboard/account/profile",
+      icon: "UsersIcon",
+    },
     {
       name: "Connected Apps",
-      href: "/dashboard/connectedapps",
+      href: "/dashboard/account/connectedapps",
       icon: "PuzzlePieceIcon",
     },
-    { name: "Billing", href: "/dashboard/billing", icon: "CreditCardIcon" },
-    { name: "Sign out", href: "#", icon: "ArrowRightOnRectangleIcon" },
+    {
+      name: "Billing",
+      href: "/dashboard/account/billing",
+      icon: "CreditCardIcon",
+    },
+    { name: "Sign out", href: "/", icon: "ArrowRightOnRectangleIcon" },
   ];
 
   function classNames(...classes) {
@@ -83,8 +91,8 @@ export default function DashboardLayout({ children }) {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? "bg-blue-600 text-white"
-                                : "text-white hover:bg-blue-600 hover:text-white",
+                                ? "bg-blue-500 text-white"
+                                : "text-white hover:bg-blue-500 hover:text-white",
                               "rounded-md px-3 py-2 text-sm font-medium"
                             )}
                             aria-current={item.current ? "page" : undefined}
@@ -242,8 +250,8 @@ export default function DashboardLayout({ children }) {
                 ? "Send Files"
                 : pathName === "/dashboard/guides"
                 ? "Fileinbox Articles & Guides"
-                : pathName === "/dashboard/account"
-                ? "Account"
+                : pathName === "/dashboard/account/profile"
+                ? "Your Account"
                 : ""}
             </h1>
           </div>

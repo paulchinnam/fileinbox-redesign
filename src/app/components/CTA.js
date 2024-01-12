@@ -47,8 +47,8 @@ export default function CTA() {
               {/* Start using our app today. */}
             </h2>
             <p className="mt-6 text-lg leading-8 text-white">
-              20 file free trial, no credit card required, and a money-back
-              guarantee if youre not totally happy.
+              {`20 file free trial, no credit card required, and a money-back
+              guarantee if you're not totally happy.`}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
