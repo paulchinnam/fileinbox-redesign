@@ -53,7 +53,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600"
+                className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-400"
               >
                 {item.name}
               </a>
@@ -62,7 +62,7 @@ export default function Example() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center gap-4">
             <Link
               href="/login"
-              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-600"
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-blue-400"
             >
               Log in
               {/* <span aria-hidden="true">&rarr;</span> */}
@@ -163,7 +163,7 @@ export default function Example() {
                 </a>
                 <p className="text-sm font-semibold leading-6 text-gray-900">
                   Try it out at{" "}
-                  <a href="" className="underline hover:text-blue-500">
+                  <a href="" className="underline hover:text-blue-400">
                     fileinbox.com/cgenco
                   </a>
                 </p>

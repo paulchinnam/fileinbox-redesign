@@ -210,7 +210,7 @@ export default function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-blue-500"
+                        className="text-sm leading-6 text-gray-600 hover:text-blue-400"
                       >
                         {item.name}
                       </a>
@@ -227,7 +227,7 @@ export default function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-blue-500"
+                        className="text-sm leading-6 text-gray-600 hover:text-blue-400"
                       >
                         {item.name}
                       </a>
@@ -316,7 +316,7 @@ export default function Example() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-400 hover:text-blue-600"
+                className="text-gray-400 hover:text-blue-400"
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
