@@ -27,7 +27,7 @@ export default function Page() {
             <img
               onClick={() => router.push("/")}
               className="mx-auto h-10 w-auto hover:cursor-pointer"
-              src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
+              src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=400"
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -95,7 +95,7 @@ export default function Page() {
                   <div className="text-sm leading-6">
                     <a
                       href="#"
-                      className="font-semibold text-blue-600 hover:text-blue-500"
+                      className="font-semibold text-blue-400 hover:text-blue-500"
                     >
                       Forgot password?
                     </a>
@@ -106,7 +106,7 @@ export default function Page() {
                   <button
                     type="submit"
                     onClick={() => router.push("/dashboard/receivefiles")}
-                    className="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                    className="flex w-full justify-center rounded-md bg-blue-400 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
                   >
                     Sign in
                   </button>
