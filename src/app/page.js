@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <Navbar />
+      {/* <Navbar /> */}
       <Demo />
       <Stats />
       <Reviews />

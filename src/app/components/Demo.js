@@ -40,7 +40,7 @@ export default function Demo() {
           }}
         />
       </div>
-      <div className="overflow-hidden py-24 sm:py-32">
+      <div className="overflow-hidden py-24 sm:py-24">
         <div className="mx-auto max-w-7xl md:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
             <div className="px-6 lg:px-0 lg:pr-4 lg:pt-4">
@@ -74,11 +74,11 @@ export default function Demo() {
             </div>
             <div className="sm:px-6 lg:px-0">
               <iframe
-                width="560"
-                height="315"
+                // width="560"
+                // height="315"
                 src="https://www.youtube.com/embed/KwboqAwNLDE?si=An7jyea2rSVEk3uM"
                 title="YouTube video player"
-                className="rounded-3xl"
+                className="rounded-3xl h-[350px] w-full"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen

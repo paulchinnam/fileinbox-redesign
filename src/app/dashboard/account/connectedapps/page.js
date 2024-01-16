@@ -65,9 +65,9 @@ export default function Page() {
                         {person.name}
                       </a>
                     </p>
-                    <p className="mt-1 flex text-xs leading-5 text-gray-500">
+                    <div className="mt-1 flex text-xs leading-5 text-gray-500">
                       <p className="relative truncate">{person.email}</p>
-                    </p>
+                    </div>
                     {person.name === "Dropbox" ? (
                       <p className="text-xs max-w-lg italic pt-2">
                         {`You can also connect Fileinbox to Apps/fileinbox instead

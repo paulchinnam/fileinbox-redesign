@@ -215,9 +215,13 @@ export default function Pages() {
                 </span> */}
               </div>
               <div className="flex gap-1 items-center">
-                <a className="mt-1 truncate text-sm text-blue-500 underline cursor-pointer">
+                <Link
+                  href="/page1"
+                  target="_blank"
+                  className="mt-1 truncate text-sm text-blue-500 underline cursor-pointer"
+                >
                   {person.title}
-                </a>
+                </Link>
                 <ClipboardDocumentIcon className="h-4 w-4 text-gray-400" />
               </div>
             </div>
