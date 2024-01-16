@@ -64,7 +64,7 @@ export default function DashboardLayout({ children }) {
     },
     {
       name: "Billing",
-      href: "/dashboard/account/billing",
+      href: "#",
       icon: "CreditCardIcon",
     },
     { name: "Sign out", href: "/", icon: "ArrowRightOnRectangleIcon" },
@@ -258,6 +258,8 @@ export default function DashboardLayout({ children }) {
               ) : pathName === "/dashboard/guides" ? (
                 "Fileinbox Articles & Guides"
               ) : pathName === "/dashboard/account/profile" ? (
+                "Your Account"
+              ) : pathName === "/dashboard/account/connectedapps" ? (
                 "Your Account"
               ) : pathName === "/dashboard/receivefiles/page1" ? (
                 <>
