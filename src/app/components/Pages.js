@@ -100,6 +100,7 @@ import {
   PlusCircleIcon,
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const people = [
   {
@@ -214,7 +215,7 @@ export default function Pages() {
                 </span> */}
               </div>
               <div className="flex gap-1 items-center">
-                <a className="mt-1 truncate text-sm text-blue-500 underline">
+                <a className="mt-1 truncate text-sm text-blue-500 underline cursor-pointer">
                   {person.title}
                 </a>
                 <ClipboardDocumentIcon className="h-4 w-4 text-gray-400" />
@@ -241,8 +242,8 @@ export default function Pages() {
                 </a>
               </div>
               <div className="-ml-px flex w-0 flex-1">
-                <a
-                  href={`tel:${person.telephone}`}
+                <Link
+                  href="/dashboard/receivefiles/page1"
                   className="hover:bg-gray-100 relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-gray-900"
                 >
                   <Cog6ToothIcon
@@ -250,7 +251,7 @@ export default function Pages() {
                     aria-hidden="true"
                   />
                   Settings
-                </a>
+                </Link>
               </div>
             </div>
           </div>

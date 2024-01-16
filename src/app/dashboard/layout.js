@@ -2,7 +2,12 @@
 
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  BellIcon,
+  HomeIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
@@ -11,9 +16,11 @@ import {
   CreditCardIcon,
   ArrowRightOnRectangleIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 
 export default function DashboardLayout({ children }) {
   const pathName = usePathname();
+  const router = useRouter();
 
   const user = {
     name: "Tom Cook",
@@ -244,15 +251,35 @@ export default function DashboardLayout({ children }) {
         <header className="bg-white">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <h1 className="text-lg font-semibold leading-6 text-gray-900">
-              {pathName === "/dashboard/receivefiles"
-                ? "Receive Files"
-                : pathName === "/dashboard/sendfiles"
-                ? "Send Files"
-                : pathName === "/dashboard/guides"
-                ? "Fileinbox Articles & Guides"
-                : pathName === "/dashboard/account/profile"
-                ? "Your Account"
-                : ""}
+              {pathName === "/dashboard/receivefiles" ? (
+                "Receive Files"
+              ) : pathName === "/dashboard/sendfiles" ? (
+                "Send Files"
+              ) : pathName === "/dashboard/guides" ? (
+                "Fileinbox Articles & Guides"
+              ) : pathName === "/dashboard/account/profile" ? (
+                "Your Account"
+              ) : pathName === "/dashboard/receivefiles/page1" ? (
+                <>
+                  <div className="flex items-center gap-4">
+                    {/* <HomeIcon
+                      className="h-5 w-5"
+                      onClick={() => router.push("/")}
+                    />
+                    <p className="font-medium text-sm">{`/`}</p> */}
+                    <Link
+                      href="/dashboard/receivefiles"
+                      className="font-medium text-sm hover:underline hover:text-blue-400"
+                    >
+                      Upload Pages
+                    </Link>
+                    <p className="font-medium text-sm">{`/`}</p>
+                    <p className="font-medium text-sm">Page1</p>
+                  </div>
+                </>
+              ) : (
+                ""
+              )}
             </h1>
           </div>
         </header>
