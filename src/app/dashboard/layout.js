@@ -261,6 +261,8 @@ export default function DashboardLayout({ children }) {
                 "Your Account"
               ) : pathName === "/dashboard/account/connectedapps" ? (
                 "Your Account"
+              ) : pathName === "/dashboard/download" ? (
+                "Download Files"
               ) : pathName === "/dashboard/receivefiles/page1" ? (
                 <>
                   <div className="flex items-center gap-4">

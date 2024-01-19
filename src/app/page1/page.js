@@ -95,7 +95,7 @@ export default function Page() {
           <h1 className="text-lg font-semibold leading-6 text-white">Page1</h1>
         </div>
       </header>
-      <div className="bg-gray-50 xl:pb-24 pb-4 shadow-inner pt-12">
+      <div className="bg-gray-50 xl:pb-10 pb-4 shadow-inner pt-10">
         {/* <div className="mx-96">
           <h1 className="text-2xl font-medium text-gray-900 pb-2">Page1</h1>
           <div className="w-full h-0.5 bg-gray-200 mb-8"></div>
@@ -238,7 +238,7 @@ export default function Page() {
             })}
           </ul>
 
-          <button className="mt-8 bg-green-500 w-full text-white rounded-md py-2.5 hover:bg-green-600">
+          <button className="mt-12 bg-green-500 w-full text-white rounded-md py-2.5 hover:bg-green-600">
             Send
           </button>
         </main>
