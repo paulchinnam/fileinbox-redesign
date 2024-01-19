@@ -1,4 +1,8 @@
-import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import {
+  ChevronRightIcon,
+  ClipboardDocumentIcon,
+  ClipboardIcon,
+} from "@heroicons/react/20/solid";
 import {
   PhotoIcon,
   CommandLineIcon,
@@ -6,6 +10,7 @@ import {
   XMarkIcon,
   ArrowTopRightOnSquareIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const people = [
   {
@@ -120,6 +125,22 @@ export default function Page() {
 
         <div className="flex justify-between items-center">
           <h1 className="pt-12 font-semibold">Uploaded 4/6 files</h1>
+          <div className="flex items-center gap-2 pt-12">
+            <div className="flex items-center">
+              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+            </div>
+            <Link
+              href="/dashboard/download"
+              className="text-sm hover:underline"
+              target="_blank"
+            >
+              fi.run/OKGPhWkd
+            </Link>
+            <button className="text-sm rounded-md px-3 py-1 bg-green-500 text-white hover:bg-green-600 flex items-center gap-1">
+              <ClipboardIcon className="h-4 w-4" />
+              Copy
+            </button>
+          </div>
           {/* <p className="pt-12 text-sm">
             Page link:{" "}
             <span className="text-blue-400 underline">fi.run/OKGPhWkd</span>
@@ -130,13 +151,13 @@ export default function Page() {
           <div className="w-3/4 h-2 rounded-full bg-blue-400"></div>
         </div>
 
-        <div className="flex gap-1 items-center pt-12">
+        {/* <div className="flex gap-1 items-center pt-12">
           <p className="text-sm">
             Page link:{" "}
             <span className="text-blue-400 underline">fi.run/OKGPhWkd</span>
           </p>
           <ArrowTopRightOnSquareIcon className="h-4 w-4" />
-        </div>
+        </div> */}
 
         {/* <div className="flex flex-col mt-12">
           <div className="mx-auto">
