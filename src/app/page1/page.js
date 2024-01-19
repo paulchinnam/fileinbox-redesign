@@ -91,7 +91,7 @@ export default function Page() {
   return (
     <>
       <div className="bg-gray-50 pt-24 pb-24">
-        <main className="bg-white shadow-md ring-1 ring-gray-200 p-10 rounded-md mx-96">
+        <main className="bg-white shadow-md ring-1 ring-gray-200 p-10 rounded-md xl:mx-96 lg:mx-72 sm:mx-24 mx-8">
           <h1 className="text-2xl font-medium text-gray-900 pb-2">Page1</h1>
           <div className="w-full h-0.5 bg-gray-200 mb-12"></div>
           <div className="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-blue-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
