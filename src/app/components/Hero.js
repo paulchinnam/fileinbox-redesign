@@ -11,6 +11,7 @@ import macbook from "public/macbook.png";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import macbook2 from "public/macbook2.png";
+import macbook3 from "public/macbook3.svg";
 
 const navigation = [
   { name: "Demo", href: "#" },
@@ -189,7 +190,7 @@ export default function Example() {
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
             <Image
-              src={macbook2}
+              src={macbook3}
               className="mx-auto w-[22.875rem] max-w-full scale-150"
               alt="app screenshot"
             />
