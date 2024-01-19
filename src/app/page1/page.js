@@ -90,10 +90,18 @@ function getIconForFile(fileName) {
 export default function Page() {
   return (
     <>
-      <div className="bg-gray-50 xl:py-24 py-4">
-        <main className="bg-white shadow-md ring-1 ring-gray-200 p-10 rounded-md xl:mx-96 lg:mx-72 sm:mx-24 mx-2">
+      <header className="bg-blue-400">
+        <div className="pl-96 py-4">
+          <h1 className="text-lg font-semibold leading-6 text-white">Page1</h1>
+        </div>
+      </header>
+      <div className="bg-gray-50 xl:pb-24 pb-4 shadow-inner pt-12">
+        {/* <div className="mx-96">
           <h1 className="text-2xl font-medium text-gray-900 pb-2">Page1</h1>
-          <div className="w-full h-0.5 bg-gray-200 mb-12"></div>
+          <div className="w-full h-0.5 bg-gray-200 mb-8"></div>
+        </div> */}
+
+        <main className="bg-white shadow-md ring-1 ring-gray-200 p-10 rounded-md xl:mx-96 lg:mx-72 sm:mx-24 mx-2">
           <div className="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-12 text-center hover:border-blue-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
             {/* <svg
             className="mx-auto h-12 w-12 text-gray-400"
@@ -230,7 +238,7 @@ export default function Page() {
             })}
           </ul>
 
-          <button className="mt-12 bg-green-500 w-full text-white rounded-md py-2.5 hover:bg-green-600">
+          <button className="mt-8 bg-green-500 w-full text-white rounded-md py-2.5 hover:bg-green-600">
             Send
           </button>
         </main>
