@@ -10,6 +10,7 @@ import {
   CreditCardIcon,
   CubeIcon,
   FingerPrintIcon,
+  PuzzlePieceIcon,
   UserCircleIcon,
   UsersIcon,
   XMarkIcon,
@@ -44,7 +45,7 @@ export default function Layout({ children }) {
     {
       name: "Connected Apps",
       href: "/dashboard/account/connectedapps",
-      icon: FingerPrintIcon,
+      icon: PuzzlePieceIcon,
       current: pathName === "/dashboard/account/connectedapps",
     },
     // { name: "Billing", href: "#", icon: CreditCardIcon, current: false },

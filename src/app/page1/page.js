@@ -160,7 +160,7 @@ export default function Page() {
             <div className="w-3/4 h-2 rounded-full bg-blue-400"></div>
           </div>
 
-          <div className="flex items-center gap-2 pt-12">
+          {/* <div className="flex items-center gap-2 pt-12">
             <div className="flex items-center">
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
             </div>
@@ -175,7 +175,7 @@ export default function Page() {
               <ClipboardIcon className="h-4 w-4" />
               Copy
             </button>
-          </div>
+          </div> */}
 
           {/* <div className="flex gap-1 items-center pt-12">
             <p className="text-sm">
